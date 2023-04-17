@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_red"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:background="@color/red" />
+
+    <TextView
+        android:id="@+id/tv_yellow"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/tv_red"
+        android:background="@color/yellow" />
+
+    <TextView
+        android:id="@+id/tv_bluedark"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_yellow"
+        android:layout_alignEnd="@+id/tv_yellow"
+        android:background="@color/blue_dark" />
+
+    <TextView
+        android:id="@+id/tv_bluelight"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_yellow"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_red"
+        android:background="@color/blue_light" />
+
+    <TextView
+        android:id="@+id/tv_green"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_bluedark"
+        android:layout_alignParentRight="true"
+        android:background="@color/green" />
+
+</RelativeLayout>
